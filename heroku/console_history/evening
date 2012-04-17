@@ -1,0 +1,8 @@
+Beta
+exit
+EmailSubscriber
+EmailSubscriber.all
+EmailSubscriber.count
+EmailSubscriber.collect{ |e| e.email }
+EmailSubscriber.all.collect{ |e| e.email }
+exit

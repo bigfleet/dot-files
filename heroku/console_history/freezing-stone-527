@@ -1,0 +1,57 @@
+will_ec = EventCard.for_user_and_event(will, le)
+will_ec.selections.count
+will_ec.selections.collect{ |s| s.prompt }
+will_ec.selections.collect{ |s| s.prompt.body }
+lady = User.find 2322
+lady_ec = EventCard.for_user_and_event(lady, le)
+lady_ec.selections.collect{ |s| s.prompt.body }
+cats = Poll.find 3946
+le.event_date
+will_ec.created_at
+lady_ec.created_at
+le.preroll_hash(will).select{ |hash| hash["type"] == "Poll" }.collect{ |h2| h2["data"]["results"] }
+le.preroll_hash(will).select{ |hash| hash["type"] == "Poll" }
+me = User.find 7
+me_ec = EventCard.for_user_and_event(me, ec)
+me_ec = EventCard.for_user_and_event(me, le)
+le.preroll_hash(me)
+le.preroll_hash(me).collect{ |hash| hash["type"] }
+le.preroll_hash(will).select{ |hash| hash["type"] == "Poll" }.collect{ |h2| h2["data"]["results"] }
+le.preroll_hash(will).select{ |hash| hash["type"] == "Poll" }.collect{ |h2| h2["data"] }
+le.preroll_hash(lady).select{ |hash| hash["type"] == "Poll" }.collect{ |h2| h2["data"] }
+le.preroll_hash(lady).select{ |hash| hash["type"] == "Poll" }.collect{ |h2| h2["data"]["results"[ }
+le.preroll_hash(lady).select{ |hash| hash["type"] == "Poll" }.collect{ |h2| h2["data"]["results"] }
+le.id
+le.preroll_hash(lady).select{ |hash| hash["type"] == "Poll" }.collect{ |h2| h2["data"] }
+exit
+Achievement.count
+Achievement.count(:group => "date(created_at)")
+LiveEvent.where(:authority_id => 2).sum(:new_player_count)
+Trivia.where(:body => "What University to Chris Young attend?")
+Trivia.where(:body => "What University did Chris Young attend?")
+dwts = LiveEvent.find 239
+dwts2 = LiveEvent.find 251
+dwts.trivia.unpushed.count
+LiveEvent.trivia_copy_helper(dwts.trivia.unpushed, dwts2, {})
+LiveEvent.concluded.not_demos.where(:player_count => nil)
+LiveEvent.concluded.not_demos.where(:player_count => nil).first
+LiveEventNumberCruncher.new(LiveEvent.find(242)).crunch
+dwts.trivia.unpushed.collect{ |t| t.body }
+LiveEvent.where(:authority_id => 2).count
+LiveEvent.where(:authority_id => 2).collect{ |le| le.event_cards.collect{ |ec| ec.user.email } }
+LiveEvent.where(:authority_id => 2).collect{ |le| le.event_cards.collect{ |ec| ec.user.email } }.flatten.sort.uniq
+LiveEvent.where(:authority_id => 2).collect{ |le| le.event_cards.collect{ |ec| ec.user.email } }.flatten.sort.uniq.count
+LiveEvent.where(:authority_id => 2).collect{ |le| le.category }
+LiveEvent
+LiveEvent.where(:authority_id => 2).collect{ |le| le.sport }
+LiveEvent.where(:sport => "FoxEdge")
+LiveEvent.where(:sport => "FoxEdge").collect{ |le| le.update_attribute(:sport, nil) }
+LiveEvent.where(:sport => "FoxEdge")
+LiveEvent.where(:authority_id => 2).map{ |le| le.update_attribute(:sport, "FoxEdge") }
+LiveEvent.where(:authority_id => 2).map{ |le| le.add_players_to_mailchimp_group("Sports", le.sport) }
+Achievement.count
+Achievement.count
+Achievement.count(:group => "date(created_at)")
+Vault.standard_current_balance
+Vault.standard_current_balance.to_s
+Trivia.where(:body => "Before they were the Cardinals, what was the St. Louis team called?")

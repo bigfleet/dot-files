@@ -1,0 +1,31 @@
+User.connection.execute
+User.connection.execute("select 1")
+result = _
+result = User.connection.execute("select 1")
+result.inspect
+result.methods
+result.as_json
+result2 = USer.connection.execute("select cube_union('(0,5,2),(2,3,1)', '0');")
+result2 = User.connection.execute("select cube_union('(0,5,2),(2,3,1)', '0');")
+exit
+User.first
+User.first.max_distance
+exit
+User.find(:all).map{ |u| u.auto_geocode_address }
+User.find(:all).map{ |u| u.update_attribute(:max_distance, 75) }
+User.find(:all).collect{ |u| [u.lat, u.lng] }
+exit
+User.all.collect{ |u| [u.lat, u.lng] }
+User.all.collect{ |u| u.max_distance }
+User.all.collect{ |u| u.hygienist? }
+exit
+User.find(:all).collect{ |u| u.phone_number }
+User.find(:all).collect{ |u| u.phone_number.to_i }
+User.find(:all).collect{ |u| u.phone_number.gsub(/[^0-9]/,'').to_i }
+"(888) 867-5309"
+_.gsub(/[^0-9]/,'')
+"(888) 867-5309".gsub(/[^0-9]/,'')
+"(888) 867-5309".gsub(/[^0-9]/,'').to_i
+"704-951-7825".gsub(/[^0-9]/,'').to_i
+User.find(:all).collect{ |u| u.phone_number.gsub(/[^0-9]/,'').to_i if u.phone_number}
+exit

@@ -1,3 +1,5 @@
 mkdir -p ~/.zsh
+mkdir -p ~/.heroku
 cp -r ./zsh/* ~/.zsh
+cp -r ./heroku/* ~/.heroku
 cp .zshrc ~/.zshrc
