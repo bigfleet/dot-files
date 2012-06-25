@@ -3,3 +3,4 @@ mkdir -p ~/.heroku
 cp -r ./zsh/* ~/.zsh
 cp -r ./heroku/* ~/.heroku
 cp .zshrc ~/.zshrc
+chsh -s /bin/zsh bigfleet
