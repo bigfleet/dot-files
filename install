@@ -4,3 +4,5 @@ cp -r ./zsh/* ~/.zsh
 cp -r ./heroku/* ~/.heroku
 cp .zshrc ~/.zshrc
 chsh -s /bin/zsh bigfleet
+mkdir ~/.vim
+cp vim/.vimrc ~/.vim/.vimrc

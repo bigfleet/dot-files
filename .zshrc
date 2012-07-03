@@ -18,3 +18,4 @@ source ~/.zsh/rbenv.zsh
 
 # Customize to your needs...
 export PATH=/Users/bigfleet/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+eval "$(rbenv init -)"
