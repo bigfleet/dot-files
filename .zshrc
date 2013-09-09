@@ -18,5 +18,5 @@ source ~/.zsh/rails.zsh
 source ~/.zsh/boxen.zsh
 
 # Customize to your needs...
-export PATH=/Users/bigfleet/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export PATH="/Users/bigfleet/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 eval "$(rbenv init -)"
