@@ -14,7 +14,8 @@ source ~/.zsh/functions.zsh
 source ~/.zsh/pgsql.zsh
 source ~/.zsh/rails.zsh
 #source ~/.zsh/rvm.zsh
-source ~/.zsh/rbenv.zsh
+#source ~/.zsh/rbenv.zsh
+source ~/.zsh/boxen.zsh
 
 # Customize to your needs...
 export PATH=/Users/bigfleet/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
