@@ -1,2 +1,0 @@
-Barcamp
-Barcamp.create(:title => "BarCamp Charlotte III", :location => "Area 15", :start_time => Time.zone.parse("2010-04-10 09:00"), :end_time => Time.zone.parse("2010-04-10 18:00"), :active => true)
